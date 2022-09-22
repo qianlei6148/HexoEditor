@@ -91,6 +91,7 @@
     "codemirror": "^5.18.2",
     "configstore": "^2.1.0",
     "cos-nodejs-sdk-v5": "^2.2.6",
+    "debug": "^4.3.4",
     "electron-localshortcut": "^0.6.1",
     "electron-titlebar": "0.0.2",
     "flowchart.js": "^1.6.3",
@@ -104,7 +105,7 @@
     "hexo-util": "^0.6.2",
     "highlight.js": "^9.6.0",
     "jquery": "^3.1.0",
-    "js-sequence-diagrams": "^1000000.0.6",
+    "js-sequence-diagrams": "^0.0.1-security",
     "katex": "^0.6.0",
     "lodash": "^4.15.0",
     "log4js": "^2.5.2",
@@ -128,7 +129,7 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "electron": "^1.8.4",
+    "electron": "^1.8.8",
     "electron-builder": "^19.52.1"
   }
 }
