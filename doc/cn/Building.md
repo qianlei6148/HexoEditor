@@ -1,15 +1,15 @@
-## Building
-### Summary 
+## 创建
+### 总结 
 ```c
-//is use Windows:
+//Windows 配置npm使用:
 npm config set prefix "C:/Program Files/nodejs/npm_global"
 npm config set cache "C:/Program Files/nodejs/npm_cache" 
 
-//if use Linux\Mac:
+//Linux\Mac 配置npm使用:
 npm config set prefix "~/nodejs/npm_global"
 npm config set cache "~/nodejs/npm_cache" 
 
-//If In China China China, you can set mirror to speed up !
+//如果在中国大陆，你可以设置镜像来加速!
 npm config set registry "https://registry.npm.taobao.org"
 npm config set electron_mirror "https://npm.taobao.org/mirrors/electron/"
 
@@ -19,37 +19,37 @@ npm install
 npm start
 ```
 
-### Detail
-#### 1.Install `git`
-- [Download Page of Mac OS X](https://git-scm.com/download/mac) 
-- [Download Page of Windows](https://git-scm.com/download/win) 
-- [Download Page of Linux/Unix](https://git-scm.com/download/linux)
+### 操作详情
+#### 1.安装 `git`
+- [Mac OS X 下载](https://git-scm.com/download/mac) 
+- [Windows 下载](https://git-scm.com/download/win) 
+- [Linux/Unix 下载](https://git-scm.com/download/linux)
 
-#### 2.Install `nodejs`
-- [Download Page](https://nodejs.org/en/download/) (English)
-- [Download Page](https://nodejs.org/zh-cn/download/) (Chinese)
+#### 2.安装 `nodejs`
+- [下载地址](https://nodejs.org/en/download/) (英文)
+- [下载地址](https://nodejs.org/zh-cn/download/) (中文)
 
-**Tip**
+**提示**
 
 ```c
-//Linux/Uinx sets link method
+//Linux/Uinx 设置连接方法
 sudo ln -fs .../.../node-vX.X.X-linux-xXX/bin/node /usr/local/bin/node
 sudo ln -fs .../.../node-vX.X.X-linux-xXX/bin/npm /usr/local/bin/npm
 
-//OR if invalid
+//或 如果无效
 sudo ln -fs .../.../node-vX.X.X-linux-xXX/bin/node /usr/sbin/node
 sudo ln -fs .../.../node-vX.X.X-linux-xXX/bin/npm /usr/sbin/npm
 ```
-You can use `which node` find info.
+你可以使用命令 `which node` 来找到.
 
-#### 3.Set Config
+#### 3.配置
 
 ```c
-//If you want change cache path
+//如果你想修改缓存地址
 npm config set prefix "path of npm_global"
 npm config set cache "path of npm_cache" 
 
-//If In China China China, you can set mirror to speed up !
+//如果在中国大陆，你可以设置镜像来加速!
 npm config set registry "https://registry.npm.taobao.org/"
 npm config set electron_mirror "https://npm.taobao.org/mirrors/electron/"
 ```
@@ -64,25 +64,25 @@ npm config set cache "C:/Program Files/nodejs/npm_cache"
 npm config set prefix "~/nodejs/npm_global"
 npm config set cache "~/nodejs/npm_cache"  
 ```
-[taobao NPM mirror](https://npm.taobao.org) help you speed up where you are in China !
+[淘宝 NPM 镜像](https://npm.taobao.org) 如果你在中国大陆帮助你加速!
 
-You can find `.npmrc` from setting path or default path:
+从配置的地址或者默认地址，你可以发现 `.npmrc` :
 - Windows : `%HOMEPATH%/`
 - Linux/Unix/Mac: `~/`  
 
 
-set content this:
+设置内容如下:
 ```c
 registry=https://registry.npm.taobao.org/
 electron_mirror=https://npm.taobao.org/mirrors/electron/
 ```
-#### 4.Git Clone
+#### 4.git克隆项目
 ```sql
 git clone https://github.com/zhuzhuyule/HexoEditor.git
 ```
 
-#### 5.Install Package
-In mac, if `npm install` or `sudo npm install` is error,you can use `yarn install` to success
+#### 5.安装依赖
+在mac os系统中, 如果命令`npm install`或者`sudo npm install`失败,你可以使用命令`yarn install`来安装依赖
 ##### yarn install
 ```c
 yarn install
@@ -91,16 +91,16 @@ yarn install
 ```c
 npm install
 ```
-**Tip**
+**提示**
 ```c
-//If find Error about download Electron faild ,you can try run those
-npm install -g electron@1.8.1
+//如果发现下载electron失败，你可以尝试运行一下命令
+npm install -g electron@1.8.8
 ```
-#### 6.Start
+#### 6.启动
 ```c
 npm start
 ```
-or
+如果使用`yarn`安装依赖，也可以使用一下命令来启动
 ```
 yarn start
 ```
